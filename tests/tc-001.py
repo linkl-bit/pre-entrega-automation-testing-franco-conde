@@ -12,5 +12,3 @@ def test_login_validado(driver):
     except Exception as e: 
         print(f"Error en Test-Case-001: {e}")
         raise #dejo un registro de que el test fallo
-    finally:
-        driver.quit()

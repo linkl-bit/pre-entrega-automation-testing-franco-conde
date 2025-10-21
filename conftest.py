@@ -1,10 +1,12 @@
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from utils import login
 
 @pytest.fixture
 def driver():
-    driver=webdriver.Chrome()
+    chrome_opt = Options()
+    chrome_opt.add_argument("--incognito")
+    driver = webdriver.Chrome(options=chrome_opt)
     yield driver
     driver.quit()
-#todo lo que viene despues del yield se ejecuta sin importar lo que haya pasado

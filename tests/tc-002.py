@@ -16,5 +16,3 @@ def test_login_invalido(driver):
     except Exception as e:
         print(f"Error en Test-Case-002: {e}")
         raise
-    finally:
-        driver.quit()

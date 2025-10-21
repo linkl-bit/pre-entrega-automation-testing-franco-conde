@@ -13,7 +13,5 @@ def test_inventario(driver):
         assert driver.find_element(By.CLASS_NAME,"bm-burger-button"), "No se encontro el boton de menu."
     
     except Exception as e:
-        print(f"Error en test_inventory: {e}")
+        print(f"Error en Test-Case-003: {e}")
         raise
-    finally:
-        driver.quit()
