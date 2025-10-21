@@ -1,7 +1,5 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
-import pytest
-import time
 from utils import login
 
 def test_login_validado(driver):
