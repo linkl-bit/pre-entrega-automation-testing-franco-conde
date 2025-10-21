@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By #para selectores
 import time
 
-def test_login():
+def test_login_valido():
     driver = webdriver.Chrome() #navegador a utilizar
 
     try: 
@@ -19,7 +19,8 @@ def test_login():
         #se busca el texto entre comillas en el url actual
         assert "/inventory.html" in driver.current_url, "No se redirigio correctamente al inventario."
         
-        print("Login exitoso y validado correctamente.")
+        print("Login valido verificado correctamente.")
+        
     #guardo en una variable el posible error
     except Exception as e: 
         print(f"Error en Test-Case-001: {e}")
